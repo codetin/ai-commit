@@ -294,8 +294,7 @@
     "@google/generative-ai": "^0.24.1",
     "fs-extra": "^11.3.4",
     "openai": "^6.36.0",
-    "simple-git": "^3.36.0",
-    "vsce": "^2.15.0"
+    "simple-git": "^3.36.0"
   },
   "resolutions": {
     "@types/node": "16.x"
