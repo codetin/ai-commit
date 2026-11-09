@@ -7,7 +7,8 @@ export class ProgressHandler {
   static async withProgress<T>(
     title: string,
     task: (
-      progress: vscode.Progress<{ message?: string; increment?: number }>
+      progress: vscode.Progress<{ message?: string; increment?: number }>,
+      token: vscode.CancellationToken
     ) => Promise<T>
   ): Promise<T> {
     return vscode.window.withProgress(

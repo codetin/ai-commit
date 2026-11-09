@@ -17,7 +17,15 @@ export async function getDiffStaged(
     }
 
     const git = simpleGit(rootPath);
-    const diff = await git.diff(['--staged']);
+    // Only ask Git for its own unified diff. `--no-ext-diff` and
+    // `--no-textconv` prevent external diff drivers from returning full file
+    // contents instead of the staged changes.
+    const diff = await git.diff([
+      '--staged',
+      '--no-ext-diff',
+      '--no-textconv',
+      '--no-color'
+    ]);
 
     return {
       diff: diff || 'No changes staged.',

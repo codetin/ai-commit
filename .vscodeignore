@@ -8,3 +8,10 @@ vsc-extension-quickstart.md
 **/.eslintrc.json
 **/*.map
 **/*.ts
+node_modules/**
+aicommit.gif
+*.vsix
+.github/**
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

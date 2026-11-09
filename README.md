@@ -33,6 +33,7 @@ Use OpenAI / Azure OpenAI / DeepSeek / Grok / Gemini / Claude (Anthropic) API to
 - 😜 Support adding Gitmoji.
 - 🛠️ Support custom system prompt.
 - 📝 Support Conventional Commits specification.
+- 🔒 Only the staged git diff is sent to the AI. Oversized diffs fall back to local function/class summaries, or can be split into per-file requests and merged. File contents are never uploaded.
 
 ## 📦 Installation
 
@@ -52,7 +53,7 @@ Use OpenAI / Azure OpenAI / DeepSeek / Grok / Gemini / Claude (Anthropic) API to
 6. Review the generated commit message, and if you are satisfied, proceed to commit your changes.
 
 > **Note**\
-> If the code exceeds the maximum token length, consider adding it to the staging area in batches.
+> If the staged diff exceeds `DIFF_MAX_CHARS`, the default `summary` strategy replaces oversized file diffs with local function/class summaries. With `per-file`, each file diff is sent separately; `DIFF_PER_FILE_MERGE` controls whether the responses are concatenated locally or merged by the AI. Increase the limit or add changes to the staging area in batches.
 
 ### ⚙️ Configuration
 
@@ -77,6 +78,9 @@ In the VSCode settings, locate the "ai-commit" configuration options and configu
 | CLAUDE_API_KEY          | string |            None            |    No    | Anthropic API key. Leave empty to use Claude CLI (authenticated via `claude setup-token`). Required when `AI_PROVIDER` is `claude` |
 | CLAUDE_MODEL            | string | claude-sonnet-4-5-20250929 |    No    |                                                        Claude model to use                                                         |
 | CLAUDE_TEMPERATURE      | number |            0.7             |    No    |                                                  Controls randomness. Range: 0–1                                                   |
+| DIFF_MAX_CHARS          | number |           60000            |    No    | Maximum characters sent to the AI. Only the staged diff is sent; when exceeded, `DIFF_OVERFLOW_STRATEGY` decides whether to summarize locally or split per file. `0` disables the limit. |
+| DIFF_OVERFLOW_STRATEGY  | string |          summary           |    No    | `summary` uses local function/class summaries. `per-file` sends each file diff separately and combines the responses (slower; may hit rate limits). |
+| DIFF_PER_FILE_MERGE     | string |           local            |    No    | When using `per-file`: `local` deduplicates and concatenates the responses without an extra request. `ai` asks the model to merge them into one message (one extra request). |
 | AI_COMMIT_LANGUAGE      | string |          English           |   Yes    |                                                       Supports 19 languages                                                        |
 | SYSTEM_PROMPT           | string |            None            |    No    |                                                        Custom system prompt                                                        |
 

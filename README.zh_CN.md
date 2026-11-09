@@ -33,6 +33,7 @@
 - 😜 支持添加 Gitmoji
 - 🛠️ 支持自定义系统提示词
 - 📝 支持 Conventional Commits 规范
+- 🔒 只发送暂存区的 git diff 差异内容；超限时可本地提取函数/类名摘要，或逐文件请求后合并。不发送文件全文
 
 ## 📦 安装
 
@@ -52,7 +53,7 @@
 6. 审核生成的 Commit 信息，如果满意，请提交更改。
 
 > **Note**\
-> 如果超过最大 token 长度请分批将代码添加到暂存区。
+> 如果暂存区 diff 超过 `DIFF_MAX_CHARS`，默认的 `summary` 策略会把超限的文件 diff 替换为本地提取的函数/类名摘要；设置为 `per-file` 时会逐个文件发送 diff，由 `DIFF_PER_FILE_MERGE` 决定本地拼接还是由 AI 合并。可提高该配置或分批将代码添加到暂存区。
 
 ### ⚙️ 配置
 
@@ -77,6 +78,9 @@
 | CLAUDE_API_KEY          | string |            None            |  否  | Anthropic API 密钥。留空可使用 Claude CLI（通过 `claude setup-token` 认证）。`AI_PROVIDER` 为 `claude` 时需配置 |
 | CLAUDE_MODEL            | string | claude-sonnet-4-5-20250929 |  否  |                                                Claude 使用的模型                                                |
 | CLAUDE_TEMPERATURE      | number |            0.7             |  否  |                                            控制输出随机性。范围：0–1                                            |
+| DIFF_MAX_CHARS          | number |           60000            |  否  | 发送给 AI 的最大字符数。只发送暂存区 diff；超限时由 `DIFF_OVERFLOW_STRATEGY` 决定本地摘要还是逐文件请求。设为 0 不限制 |
+| DIFF_OVERFLOW_STRATEGY  | string |          summary           |  否  | `summary` 使用本地函数/类名摘要；`per-file` 逐个文件发送 diff 后合并返回结果（较慢，可能触发限流） |
+| DIFF_PER_FILE_MERGE     | string |           local            |  否  | 使用 `per-file` 时：`local` 本地去重拼接，不额外请求；`ai` 由模型合并成一条提交信息（额外一次请求） |
 | AI_COMMIT_LANGUAGE      | string |          English           |  是  |                                                 支持 19 种语言                                                  |
 | SYSTEM_PROMPT           | string |            None            |  否  |                                                自定义系统提示词                                                 |
 
