@@ -2,7 +2,7 @@
   "name": "ai-commit",
   "displayName": "AI Commit",
   "description": "Use OpenAI/Gemini/Claude/Azure API to review Git changes, generate conventional commit messages that meet the conventions, simplify the commit process, and keep the commit conventions consistent.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "engines": {
     "node": ">=16",
     "vscode": "^1.77.0"
@@ -26,9 +26,14 @@
     "AI Commit",
     "Auto Commit"
   ],
-  "publisher": "sitoi",
-  "repository": "https://github.com/sitoi/ai-commit",
-  "icon": "images/logo.png",
+  "publisher": "codetin",
+  "author": "code_tin",
+  "repository": "https://github.com/codetin/ai-commit",
+  "homepage": "https://github.com/codetin/ai-commit#readme",
+  "bugs": {
+    "url": "https://github.com/codetin/ai-commit/issues"
+  },
+  "icon": "images/icon.png",
   "activationEvents": [
     "onCommand:ai-commit"
   ],

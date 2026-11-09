@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img height="120" src="https://github.com/Sitoi/ai-commit/blob/main/images/logo.png?raw=true">
+<img height="120" src="images/icon.png" alt="AI Commit">
 
 <h1>AI Commit</h1>
 
@@ -21,7 +21,7 @@
 [![][avarage-rating-shield]][avarage-rating-link]
 [![][github-license-shield]][github-license-link]
 
-![](https://github.com/sitoi/ai-commit/blob/main/aicommit.gif?raw=true)
+![](https://github.com/codetin/ai-commit/blob/main/aicommit.gif?raw=true)
 
 </div>
 
@@ -93,7 +93,7 @@
 或者，可以克隆存储库并运行以下命令进行本地开发：
 
 ```bash
-$ git clone https://github.com/sitoi/ai-commit.git
+$ git clone https://github.com/codetin/ai-commit.git
 $ cd ai-commit
 $ npm install
 ```
