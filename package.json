@@ -41,7 +41,7 @@
     "commands": [
       {
         "command": "extension.ai-commit",
-        "icon": "$(diff-multiple)",
+        "icon": "$(comment-discussion)",
         "title": "AI Commit"
       },
       {
