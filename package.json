@@ -1,8 +1,8 @@
 {
-  "name": "ai-commit",
-  "displayName": "AI Commit",
+  "name": "ai-commit-codetin",
+  "displayName": "AI Commit (codetin)",
   "description": "Use OpenAI/Gemini/Claude/Azure API to review Git changes, generate conventional commit messages that meet the conventions, simplify the commit process, and keep the commit conventions consistent.",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "engines": {
     "node": ">=16",
     "vscode": "^1.77.0"
@@ -41,7 +41,7 @@
     "commands": [
       {
         "command": "extension.ai-commit",
-        "icon": "$(pencil)",
+        "icon": "$(diff-multiple)",
         "title": "AI Commit"
       },
       {

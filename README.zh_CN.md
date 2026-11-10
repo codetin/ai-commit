@@ -37,8 +37,8 @@
 
 ## 📦 安装
 
-1. 在 VSCode 中搜索 "AI Commit" 并点击 "Install" 按钮。
-2. 从 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Sitoi.ai-commit) 直接安装。
+1. 在 VSCode 中搜索 "AI Commit (codetin)" 并点击 "Install" 按钮。
+2. 从 [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=codetin.ai-commit-codetin) 直接安装。
 
 > **Note**\
 > 请确保 Node.js 版本 >= 16
@@ -121,29 +121,29 @@ $ npm install
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./license) licensed.
 
 <!-- LINK GROUP -->
 
-[github-codespace-link]: https://codespaces.new/sitoi/ai-commit
-[github-codespace-shield]: https://github.com/sitoi/ai-commit/blob/main/images/codespaces.png?raw=true
-[github-contributors-link]: https://github.com/sitoi/ai-commit/graphs/contributors
-[github-contributors-shield]: https://img.shields.io/github/contributors/sitoi/ai-commit?color=c4f042&labelColor=black&style=flat-square
-[github-forks-link]: https://github.com/sitoi/ai-commit/network/members
-[github-forks-shield]: https://img.shields.io/github/forks/sitoi/ai-commit?color=8ae8ff&labelColor=black&style=flat-square
-[github-issues-link]: https://github.com/sitoi/ai-commit/issues
-[github-issues-shield]: https://img.shields.io/github/issues/sitoi/ai-commit?color=ff80eb&labelColor=black&style=flat-square
-[github-license-link]: https://github.com/sitoi/ai-commit/blob/main/LICENSE
-[github-license-shield]: https://img.shields.io/github/license/sitoi/ai-commit?color=white&labelColor=black&style=flat-square
-[github-stars-link]: https://github.com/sitoi/ai-commit/network/stargazers
-[github-stars-shield]: https://img.shields.io/github/stars/sitoi/ai-commit?color=ffcb47&labelColor=black&style=flat-square
-[pr-welcome-link]: https://github.com/sitoi/ai-commit/pulls
+[github-codespace-link]: https://codespaces.new/codetin/ai-commit
+[github-codespace-shield]: https://github.com/codetin/ai-commit/blob/main/images/codespaces.png?raw=true
+[github-contributors-link]: https://github.com/codetin/ai-commit/graphs/contributors
+[github-contributors-shield]: https://img.shields.io/github/contributors/codetin/ai-commit?color=c4f042&labelColor=black&style=flat-square
+[github-forks-link]: https://github.com/codetin/ai-commit/network/members
+[github-forks-shield]: https://img.shields.io/github/forks/codetin/ai-commit?color=8ae8ff&labelColor=black&style=flat-square
+[github-issues-link]: https://github.com/codetin/ai-commit/issues
+[github-issues-shield]: https://img.shields.io/github/issues/codetin/ai-commit?color=ff80eb&labelColor=black&style=flat-square
+[github-license-link]: https://github.com/codetin/ai-commit/blob/main/license
+[github-license-shield]: https://img.shields.io/github/license/codetin/ai-commit?color=white&labelColor=black&style=flat-square
+[github-stars-link]: https://github.com/codetin/ai-commit/network/stargazers
+[github-stars-shield]: https://img.shields.io/github/stars/codetin/ai-commit?color=ffcb47&labelColor=black&style=flat-square
+[pr-welcome-link]: https://github.com/codetin/ai-commit/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/🤯_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-[github-contrib-link]: https://github.com/sitoi/ai-commit/graphs/contributors
-[github-contrib-shield]: https://contrib.rocks/image?repo=sitoi%2Fai-commit
-[vscode-marketplace-link]: https://marketplace.visualstudio.com/items?itemName=Sitoi.ai-commit
-[vscode-marketplace-shield]: https://img.shields.io/vscode-marketplace/v/Sitoi.ai-commit.svg?label=vscode%20marketplace&color=blue&labelColor=black&style=flat-square
-[total-installs-link]: https://marketplace.visualstudio.com/items?itemName=Sitoi.ai-commit
-[total-installs-shield]: https://img.shields.io/vscode-marketplace/d/Sitoi.ai-commit.svg?&labelColor=black&style=flat-square
-[avarage-rating-link]: https://marketplace.visualstudio.com/items?itemName=Sitoi.ai-commit
-[avarage-rating-shield]: https://img.shields.io/vscode-marketplace/r/Sitoi.ai-commit.svg?color=green&labelColor=black&style=flat-square
+[github-contrib-link]: https://github.com/codetin/ai-commit/graphs/contributors
+[github-contrib-shield]: https://contrib.rocks/image?repo=codetin%2Fai-commit
+[vscode-marketplace-link]: https://marketplace.visualstudio.com/items?itemName=codetin.ai-commit-codetin
+[vscode-marketplace-shield]: https://img.shields.io/vscode-marketplace/v/codetin.ai-commit-codetin.svg?label=vscode%20marketplace&color=blue&labelColor=black&style=flat-square
+[total-installs-link]: https://marketplace.visualstudio.com/items?itemName=codetin.ai-commit-codetin
+[total-installs-shield]: https://img.shields.io/vscode-marketplace/d/codetin.ai-commit-codetin.svg?&labelColor=black&style=flat-square
+[avarage-rating-link]: https://marketplace.visualstudio.com/items?itemName=codetin.ai-commit-codetin
+[avarage-rating-shield]: https://img.shields.io/vscode-marketplace/r/codetin.ai-commit-codetin.svg?color=green&labelColor=black&style=flat-square
